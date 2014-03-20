@@ -19,6 +19,7 @@ class Survey extends CI_Controller
 
 			$this->session->set_userdata('click', $click); //now you are resetting the user_data to run both aspects.
 		}
+
 		else
 		{
 			$this->session->set_userdata('click', 1); //click will now be a variable
@@ -26,6 +27,11 @@ class Survey extends CI_Controller
 		
 		$form_data = $this->input->post(); //this grabs the info submitted and sets it equal to this new variable form_data
 		$this->load->view('survey_success', $form_data);
+	}
+	public function session_stop()
+	{
+		$this->session->sess_destroy();
+		redirect('/');
 	}
 	
 }

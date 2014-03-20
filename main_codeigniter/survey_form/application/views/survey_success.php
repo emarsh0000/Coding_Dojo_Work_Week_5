@@ -24,6 +24,8 @@
 				<p>Comment: </p><br>
 			</div>
 			<div id = 'user'>
+				<!--  <p><?= $name ?><p>  this is shorthand for php echo-->
+
 			<?php
 			echo "<p>" . $name . "</p><br>";  //these are the keys' values
 			echo "<p>" . $city . "</p><br>";
@@ -36,6 +38,7 @@
 				<br><label id = 'button' class = "btn btn-primary"><a style = 'color:white;' href = '/'>Go Back!</a>
 			 			<input type = "submit" class = "hidden">
 			 		</label>
+			 		<a href = "/survey/session_stop">ALL DONE!</a>
 		</div>
 		</div>
 	</body>

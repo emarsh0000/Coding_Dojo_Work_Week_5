@@ -13,9 +13,9 @@ class Times extends CI_Controller
 		$this->load->view('time.php', $view_data); //this loads the view with the parameters of the array and the view file.
 	}
 
-	public function awesome()
-	{
-		$this->load->view('awesome_view');
+	// public function awesome()
+	// {
+	// 	$this->load->view('awesome_view');
 	}
 	// public function main()
 	// {
