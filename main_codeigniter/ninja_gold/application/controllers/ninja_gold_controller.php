@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Ninjagold extends CI_Controller 
+class ninjagold extends CI_Controller 
 {
 
 	public function index()
